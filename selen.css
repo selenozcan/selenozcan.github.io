@@ -14,6 +14,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100vh;
 }
 .white-box{
     background-color: whitesmoke;
@@ -170,4 +171,3 @@ body{
 	color: #c58a8a;
     transition: .7s ease-out;
 }
-

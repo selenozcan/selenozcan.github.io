@@ -1,0 +1,173 @@
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body{
+    background-color: #DBCCDF;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.white-box{
+    background-color: whitesmoke;
+    margin: 20px;
+    width: 690px;
+    height: 690px;
+    margin-right: 0;
+    margin-left: 140px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.content{
+    background-image: url(img/content-back.jpg);
+    background-size: cover;
+    min-height: 650px;
+    margin: 20px;
+}
+.menu{
+    padding: 0;
+    
+}
+.menu ul{
+    padding: 0;
+}
+
+.menu ul li{
+    list-style: none;
+    width: 100px;
+}
+
+.line-home{
+    height: 70px;
+    width: 0;
+    background-color: #edc2be;
+    position: absolute;
+    transition: width 0.5s ease-out;
+}
+
+.line-timeline{
+    height: 70px;
+    width: 0;
+    background-color: #bbb1c9;
+    position: absolute;
+    transition: width 0.5s ease-out;
+}
+
+.line-skills{
+    height: 70px;
+    width: 0;
+    background-color: #6c91cf;
+    position: absolute;
+    transition: width 0.5s ease-out;
+}
+
+.line-projects{
+    height: 70px;
+    width: 0;
+    background-color: #ceb9c1;
+    position: absolute;
+    transition: width 0.5s ease-out;
+}
+
+.line-ideas{
+    height: 70px;
+    width: 0;
+    background-color: #4A558C;
+    position: absolute;
+    transition: width 0.5s ease-out;
+}
+
+.line-two{
+    height: 70px;
+    width: 100px;
+    background-color: #8f8bac;
+}
+
+.menu ul li a{
+    position: absolute;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    z-index: 1;
+    margin: 25px 2px;
+    text-transform: uppercase;
+}
+
+.menu ul li:hover{
+    cursor: pointer;
+}
+
+.menu ul li:hover [class^="line"]{
+    width: 100px;
+}
+
+.button{
+    height: auto;
+    text-align: center;
+    flex: 1;
+    margin: 0.5em;
+    padding: 15%;
+    min-width: 70%;
+}
+
+.title{
+    white-space: nowrap;
+    font-family: 'WindSong', cursive;
+    text-align: center;
+    font-size: 70px;
+    font-weight: bolder;
+    margin: 0;
+    color: #c58a8a;
+    margin-top: 80px;
+}
+
+.content h3{
+    color: #4A558C;
+    margin-top: -5px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+}
+
+.social{
+    height: 1.5em;
+    min-width: 100%;
+    margin: 0px;
+    text-align: center;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    
+}
+
+.socialbtns a, a:hover {
+	text-decoration: none;
+}
+
+.socialbtns, .socialbtns ul, .socialbtns li {
+  margin: 0;
+  padding: 5px;
+}
+
+.socialbtns li {
+    list-style: none outside none;
+    display: inline-block;
+}
+
+.socialbtns .fa {
+	width: 30px;
+    height: 15px;
+	color: #fff;
+	padding: 12px;
+}
+
+.socialbtns .fa:hover {
+	color: #c58a8a;
+    transition: .7s ease-out;
+}
+

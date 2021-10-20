@@ -2,19 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=WindSong:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 body{
     background-color: #DBCCDF;
-    margin: 0;
+    /* margin: 0;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 }
 .container{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 95vh;
 }
 .white-box{
     background-color: whitesmoke;
@@ -22,14 +23,17 @@ body{
     width: 690px;
     height: 690px;
     margin-right: 0;
-    margin-left: 140px;
+    margin-left: 100px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .content{
     background-image: url(img/content-back.jpg);
     background-size: cover;
-    min-height: 650px;
+    height: 650px;
     margin: 20px;
+}
+.hide {
+    display:none;
 }
 .menu{
     padding: 0;
@@ -76,7 +80,7 @@ body{
     transition: width 0.5s ease-out;
 }
 
-.line-ideas{
+.line-cv{
     height: 70px;
     width: 0;
     background-color: #4A558C;
@@ -110,12 +114,7 @@ body{
 }
 
 .button{
-    height: auto;
-    text-align: center;
-    flex: 1;
-    margin: 0.5em;
-    padding: 15%;
-    min-width: 70%;
+    transition: 0.25s ease-in;
 }
 
 .title{
@@ -129,7 +128,7 @@ body{
     margin-top: 80px;
 }
 
-.content h3{
+.home > h3{
     color: #4A558C;
     margin-top: -5px;
     font-family: 'Lato', sans-serif;
@@ -151,8 +150,8 @@ body{
 }
 
 .socialbtns, .socialbtns ul, .socialbtns li {
-  margin: 0;
-  padding: 5px;
+    margin: 0;
+    padding: 5px;
 }
 
 .socialbtns li {
@@ -171,3 +170,132 @@ body{
 	color: #c58a8a;
     transition: .7s ease-out;
 }
+
+.timeline{
+    margin-bottom: 50px;
+}
+
+.timeline{
+    padding: 50px;
+    background-color: rgba(100, 100, 111, 0.1);
+}
+
+.timeline-container{
+    /*display: flex;
+    justify-content: center;
+    /*align-items: center; */
+    /*scroll */
+    height: 550px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/*scroll for chrome*/
+.timeline-container::-webkit-scrollbar {
+    display: none;
+}
+
+.timeline-container .row{
+    display: flex;
+}
+
+.timeline-container .row1{
+    justify-content: flex-start;
+}
+
+.timeline-container .row2{
+    justify-content: flex-end;
+}
+
+.timeline-container .item{
+    position: relative;
+    background-color: #5b5975;
+    border-radius: 5px;
+    
+    width: calc(45% - 50px);
+    padding: 15px;
+    color: #e9eaf1;
+    box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+}
+.item .item-info{
+    margin: 0px;
+}
+
+.item .item-title{
+    font-family: Lato;
+    margin: 0;
+}
+
+.item .item-subtitle{
+    margin-top: 5px;
+    font-style: italic;
+    font-weight: 4;
+    font-family: Helvetica;
+    font-size: smaller;
+}
+
+.item .item-details{
+    font-family: Helvetica;
+    font-weight: 4;
+    margin-bottom: 0px;
+}
+
+.row .item .icon{
+    position: absolute;
+    background: whitesmoke;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #4A558C;
+    top: 13px;
+    font-size: 17px;
+}
+
+.row1 .item .icon{
+    right: -67px;
+}
+
+.row2 .item .icon{
+    left: -67px;
+}
+
+.timeline-container .item::before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #5b5975;
+    top: 28px;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+
+.row1 .item::before{
+    right: -7px;
+    
+}
+
+.row2 .item::before{
+    left: -7px;
+}
+
+.timeline-container .line{
+    position: fixed;
+    height: 550px;
+    width: 4px;
+    background: whitesmoke;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 7px 29px 0px;
+}
+
+footer{
+    color:#454e6b;
+    font-style: italic;
+    font-family: 'Helvetica';
+    font-size: smaller;
+}
+

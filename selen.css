@@ -172,10 +172,6 @@ body{
 }
 
 .timeline{
-    margin-bottom: 50px;
-}
-
-.timeline{
     padding: 50px;
     background-color: rgba(100, 100, 111, 0.1);
 }
@@ -259,7 +255,7 @@ body{
 }
 
 .row2 .item .icon{
-    left: -67px;
+    left: -68px;
 }
 
 .timeline-container .item::before{
@@ -290,6 +286,83 @@ body{
     left: 50%;
     transform: translateX(-50%);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 7px 29px 0px;
+}
+
+.skills{
+    height: 100%;
+    background-color: rgba(100, 100, 111, 0.1);
+}
+
+.skills-container{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-items: center;
+    height: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.skills-wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    row-gap: 30px;
+    background-color: rgba(13, 38, 83, 0.7);
+    padding: 20px;
+}
+
+.skills-wrapper .tooltip{
+    font-family: Heletica;
+    font-size: 20px;
+
+}
+
+.skills-wrapper .icon-holder{
+    width: 25%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-size: 80px;
+    color: whitesmoke;
+    cursor: pointer
+}
+
+.icon-holder:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #c1cdd380;
+    transform-origin: bottom center;
+    transition: transform 0.25s ease-out;
+}
+
+.icon-holder:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+}
+
+.tooltip::before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #5b5975;
+    top: 28px;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+
+.tooltip{
+    background: #5b5975;
+}
+.skills-wrapper.item::before{
+    right: -7px;
+
 }
 
 footer{

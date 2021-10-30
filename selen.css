@@ -315,7 +315,6 @@ body{
 .skills-wrapper .tooltip{
     font-family: Heletica;
     font-size: 20px;
-
 }
 
 .skills-wrapper .icon-holder{
@@ -344,25 +343,6 @@ body{
 .icon-holder:hover:after {
     transform: scaleX(1);
     transform-origin: bottom center;
-}
-
-.tooltip::before{
-    position: absolute;
-    content: "";
-    height: 15px;
-    width: 15px;
-    background: #5b5975;
-    top: 28px;
-    transform: rotate(45deg);
-    z-index: 1;
-}
-
-.tooltip{
-    background: #5b5975;
-}
-.skills-wrapper.item::before{
-    right: -7px;
-
 }
 
 footer{

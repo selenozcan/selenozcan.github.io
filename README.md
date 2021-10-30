@@ -1,7 +1,7 @@
 # selenozcan.github.io
 Personal website
 
-Available Pages: Home, Timeline, Social
+Available Sections: Home, Timeline, Social
   
 To-Do: Projects, Skills, CV Download
 

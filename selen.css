@@ -255,7 +255,7 @@ body{
 }
 
 .row2 .item .icon{
-    left: -68px;
+    left: -67px;
 }
 
 .timeline-container .item::before{
@@ -312,22 +312,17 @@ body{
     padding: 20px;
 }
 
-.skills-wrapper .tooltip{
-    font-family: Heletica;
-    font-size: 20px;
-}
-
-.skills-wrapper .icon-holder{
+.icon-holder{
     width: 25%;
     position: relative;
     display: inline-block;
     text-align: center;
-    font-size: 80px;
+    font-size: 40px;
     color: whitesmoke;
     cursor: pointer
 }
 
-.icon-holder:after{
+.icon::after{
     content: '';
     position: absolute;
     width: 100%;
@@ -335,14 +330,62 @@ body{
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #c1cdd380;
+    background-color: rgb(148, 144, 211);
     transform-origin: bottom center;
     transition: transform 0.25s ease-out;
 }
 
-.icon-holder:hover:after {
-    transform: scaleX(1);
+.icon:hover::after {
+    transform: scaleX(0.4);
     transform-origin: bottom center;
+}
+
+.icon-holder:hover::before, 
+.icon-holder:hover::after{
+    opacity: 1;    
+}
+
+.icon-holder::before {
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    width: 200px;
+    padding: 10px;
+    font-size: 0.8em;
+    line-height: 1.4em;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 20px;
+    color: white;
+    content: "selamlar selamlar  selamlar selamlar selamlar selamlar selamlar  ";
+    transition: .40s ease-in-out;   
+}
+/* 
+.icon-holder::after {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    content: "";
+    bottom: 150%;
+    left: 50%;
+    border-top-color: rgba(0, 0, 0, 0.8);
+    border-bottom-width: 0;
+    transform: translateX(-50%);
+} */
+
+.icon-holder.top::before{
+    bottom: calc(150% + 5px);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icon-holder.bottom::before{
+    top: calc(150% + 5px);
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 footer{

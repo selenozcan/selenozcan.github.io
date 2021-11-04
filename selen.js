@@ -41,6 +41,7 @@ $(function () {
       $(".projects").fadeOut();
       $(".cv").fadeOut();
     });
+    
     var pythonTooltip = "Line 1.&#xa;Line 2";
     $(".python").attr("tooltip", $.parseHTML(pythonTooltip)[0].data);
   });

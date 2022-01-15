@@ -10,4 +10,4 @@ It's a very simple website with some CSS and JQuery magic 🎇🎇🎇🎇🎇
 Bugs:\
 -available for desktop only, mobile devices are not supported yet 😥\
 -menu doesn't work as intended, links won't update correctly when clicked on menu buttons\
--skills page needs update\
+-skills page needs update

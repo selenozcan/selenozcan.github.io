@@ -272,7 +272,6 @@ body{
 
 .row1 .item::before{
     right: -7px;
-    
 }
 
 .row2 .item::before{
@@ -324,7 +323,7 @@ body{
     cursor: pointer
 }
 
-.icon::after{
+.skills .icon::after{
     content: '';
     position: absolute;
     width: 100%;
@@ -351,7 +350,6 @@ body{
     position: absolute;
     z-index: 2;
     opacity: 0;
-    width: 150px;
     padding: 10px;
     font-size: 0.8em;
     line-height: 1.4em;
@@ -360,7 +358,7 @@ body{
     font-size: 15px;
     color: white;
     content: attr(tooltip);
-    text-align: left;
+    text-align: justify;
     white-space: pre;
     transition: .30s ease-in-out;   
 }
@@ -390,6 +388,64 @@ body{
     top: calc(150% + 5px);
     left: 50%;
     transform: translateX(-50%);
+}
+
+.projects-container{
+    display: flex;
+    height: 500px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    padding: 50px;
+}
+
+/*scroll for chrome*/
+.projects-container::-webkit-scrollbar {
+    display: none;
+}
+
+.projects-wrapper{
+    column-count: 2;
+    column-gap: 0;
+    padding: 10px;
+}
+
+.project-card{
+    display: inline-block;
+    background-color: #c58a8a;
+    border-color: #DBCCDF;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+    font-family: Helvetica;
+    font-size: 13px;
+    color: whitesmoke;
+    flex: 40%;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.project-card > .project-title{
+    font-size: large;
+    font-weight: bold;
+}
+
+.project-card > .project-dates{
+    font-style: italic;
+}
+
+.no-indent ul{
+    list-style-position: outside;
+    padding: 5px;
+    padding-left: 15px;
+}
+
+.no-indent ul li{
+    padding-bottom: 2px;
+}
+
+
+.indent ul {
+    padding-left: 20px;
 }
 
 footer{
